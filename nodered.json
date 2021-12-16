@@ -1,0 +1,396 @@
+[
+    {
+        "id": "bd3226dc0fd1ec8d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6b88b06427817012",
+        "type": "ibmiot",
+        "name": "dev1",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "b7e26b246137f043",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "8574305e0e81d202",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95df8c1c3248efb1",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-29ftlosh8t458c1lc65s5z50a7mz8xqrrlhrhrpp9pye:3de792fd740b086adf838e58378ada7e@3a39fcf5-9c31-4870-a255-3498459b92a6-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "user1"
+    },
+    {
+        "id": "8574305e0e81d202",
+        "type": "ui_tab",
+        "name": "Sensor Values",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6ea97457055c769c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "872d67d40e77ddfd",
+        "type": "debug",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "3343f52e0c6609e4",
+        "type": "ibmiot in",
+        "z": "bd3226dc0fd1ec8d",
+        "authentication": "apiKey",
+        "apiKey": "6b88b06427817012",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": true,
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "5ef17a837cafc640",
+                "9ab473a122f2887c",
+                "f96a2324e125128f",
+                "c4d59efc7f16c707",
+                "872d67d40e77ddfd"
+            ]
+        ]
+    },
+    {
+        "id": "f998bec69c9bd3a9",
+        "type": "ui_gauge",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "group": "b7e26b246137f043",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temparature",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 490,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5ef17a837cafc640",
+        "type": "function",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "temperature",
+        "func": "global.set(\"temperature\",msg.payload.temperature )\nreturn {value : msg.payload.temperature};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "f998bec69c9bd3a9"
+            ]
+        ]
+    },
+    {
+        "id": "41d555c993fe27ed",
+        "type": "http in",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "url": "/data",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "4d5025b170013bea"
+            ]
+        ]
+    },
+    {
+        "id": "4d5025b170013bea",
+        "type": "function",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "func": "msg.payload = {motorstatus : global.get(\"motorstatus\")}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 560,
+        "wires": [
+            [
+                "47989f780dcb6fb5"
+            ]
+        ]
+    },
+    {
+        "id": "47989f780dcb6fb5",
+        "type": "http response",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5d53f2bee5d68bb7",
+        "type": "ui_gauge",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "group": "b7e26b246137f043",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 500,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "726b3368ee5f593d",
+        "type": "ui_gauge",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "group": "b7e26b246137f043",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Soil Moistuure",
+        "label": "cm3/cm3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 500,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9ab473a122f2887c",
+        "type": "cloudantplus out",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "",
+        "cloudant": "95df8c1c3248efb1",
+        "database": "iotdata",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 370,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4d59efc7f16c707",
+        "type": "function",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "humidity",
+        "func": "global.set(\"humidity\",msg.payload.humidity )\nreturn {value : msg.payload.humidity};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "5d53f2bee5d68bb7"
+            ]
+        ]
+    },
+    {
+        "id": "f96a2324e125128f",
+        "type": "function",
+        "z": "bd3226dc0fd1ec8d",
+        "name": "moisture",
+        "func": "global.set(\"moisture\",msg.payload.moisture )\nif(msg.payload.moisture > 15){\n    global.set(\"motorstatus\",\"Not Running\")\n}else{\n    global.set(\"motorstatus\",\"Running\")\n}\n\n\nreturn {value : msg.payload.moisture/100};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "726b3368ee5f593d"
+            ]
+        ]
+    }
+]

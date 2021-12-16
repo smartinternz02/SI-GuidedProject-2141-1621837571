@@ -1,0 +1,6 @@
+http://192.168.43.56:1880/ui
+for checking nodered values after running final mit app
+http://127.0.0.1:1880/ui
+for checking nodered values after running the nodered
+http://192.168.43.56:1880/data
+for checking the motor status

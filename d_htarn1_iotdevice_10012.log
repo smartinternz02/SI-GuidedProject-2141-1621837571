@@ -1,0 +1,7 @@
+2021-10-11 07:20:39,048   ibmiotf.device.Client      INFO    Connected successfully: d:htarn1:iotdevice:10012
+2021-10-11 08:53:46,410   ibmiotf.device.Client      INFO    Connected successfully: d:htarn1:iotdevice:10012
+2021-10-11 09:00:11,017   ibmiotf.device.Client      ERROR   Unexpected disconnect from the IBM Watson IoT Platform: 1
+2021-10-11 09:00:15,484   ibmiotf.device.Client      INFO    Connected successfully: d:htarn1:iotdevice:10012
+2021-10-11 11:40:24,477   ibmiotf.device.Client      INFO    Connected successfully: d:htarn1:iotdevice:10012
+2021-10-11 13:25:42,533   ibmiotf.device.Client      ERROR   Unexpected disconnect from the IBM Watson IoT Platform: 1
+2021-10-11 13:32:11,525   ibmiotf.device.Client      INFO    Connected successfully: d:htarn1:iotdevice:10012
